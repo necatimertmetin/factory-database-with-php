@@ -1,0 +1,130 @@
+body {
+  background-color: #000;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 250px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px;
+
+  background: #13141b;
+
+  border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(182, 182, 182);
+
+}
+
+.form-container * {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.form-title {
+  /*background: linear-gradient(90deg, rgba(255,21,0,1) 0%, rgba(255,248,0,1) 58%, rgba(0,255,38,1) 100%);*/
+  background: linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(252,0,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #13141b;
+  text-align: center;
+  font-weight: 200;
+  font-size: 6em;
+
+animation-name: rotation;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+@keyframes rotation{
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+
+.form-subtitle {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+}
+
+.form-input {
+  border-radius: 24px;
+  background: transparent;
+  border-left: 5px;
+  border-top: 5px;
+  border-color: #eee;
+  font-size: 1.5em;
+  padding: 5px;
+  padding-left: 20px !important;
+  width: 100%;
+  font-weight: 300;
+}
+.form-input::placeholder {
+  color: white;
+}
+.form-button, .form-button:link, .form-button:visited {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 29px;
+  background: linear-gradient(145deg, #2c2c2c, #252525);
+  /*box-shadow: 3px 3px 3px yellow, -3px -3px 3px lightgreen;*/
+  box-shadow: 2px 2px 1px rgba(0,254,255,1), -2px -2px 1px rgba(252,0,255,1);
+  font-size: 2em;
+  font-weight: 300;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  
+}
+.form-button:hover {
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.8),
+    -3px -2px 3px rgba(255, 255, 255, 0.8);
+  background: none;
+  
+}
+.form-button:active {
+  box-shadow: none;
+  transform: scale(.95);
+  background: none;
+}
+
+
+
+
+
+
+
